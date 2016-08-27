@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Meine ASP.NET-Anwendung</title>
-        @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -19,6 +19,12 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+        
+        <div class="jumbotron">
+            <h1>ASP.NET</h1>
+            <div id="example"></div>
+            <div id="helloWorld"></div>
+        </div>
         <hr />
     </div>
 

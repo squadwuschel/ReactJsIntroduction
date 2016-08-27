@@ -154,12 +154,6 @@
     <Content Include="ScriptsApp\HelloWorldJavaScript.min.js">
       <DependentUpon>HelloWorldJavaScript.js</DependentUpon>
     </Content>
-    <Content Include="ScriptsApp\testWorld.js">
-      <DependentUpon>HelloWorldJavaScript.jsx</DependentUpon>
-    </Content>
-    <Content Include="ScriptsApp\testWorld.min.js">
-      <DependentUpon>testWorld.js</DependentUpon>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="package.json" />
