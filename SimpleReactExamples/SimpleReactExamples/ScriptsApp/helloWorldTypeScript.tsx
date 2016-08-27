@@ -7,7 +7,7 @@
 //http://staxmanade.com/2015/08/playing-with-typescript-and-jsx/
 
 var Counter = React.createClass({
-    add: function () {
+    add: () => {
         console.log('add 1!');
     },
 
