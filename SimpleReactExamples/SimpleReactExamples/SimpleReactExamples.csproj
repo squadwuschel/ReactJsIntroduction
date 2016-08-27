@@ -148,6 +148,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="ScriptsApp\HelloWorldJavaScript.js">
+      <DependentUpon>HelloWorldJavaScript.jsx</DependentUpon>
+    </Content>
+    <Content Include="ScriptsApp\HelloWorldJavaScript.min.js">
+      <DependentUpon>HelloWorldJavaScript.js</DependentUpon>
+    </Content>
     <Content Include="ScriptsApp\testWorld.js">
       <DependentUpon>HelloWorldJavaScript.jsx</DependentUpon>
     </Content>

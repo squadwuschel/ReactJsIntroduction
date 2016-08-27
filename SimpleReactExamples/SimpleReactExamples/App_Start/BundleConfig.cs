@@ -15,7 +15,8 @@ namespace SimpleReactExamples
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                       "~/ScriptsApp/helloWorldTypeScript.js"
+                       "~/ScriptsApp/helloWorldTypeScript.js",
+                       "~/ScriptsApp/HelloWorldJavaScript.js"
                        ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
