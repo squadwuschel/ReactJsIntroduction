@@ -189,7 +189,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ScriptsApp\counterComponent.tsx" />
     <TypeScriptCompile Include="ScriptsApp\helloWorld.tsx" />
+    <TypeScriptCompile Include="ScriptsApp\mainApp.tsx" />
     <TypeScriptCompile Include="typings\react\react-addons-create-fragment.d.ts" />
     <TypeScriptCompile Include="typings\react\react-addons-css-transition-group.d.ts" />
     <TypeScriptCompile Include="typings\react\react-addons-linked-state-mixin.d.ts" />

@@ -23,4 +23,3 @@ class HelloWorld extends React.Component<IHelloWorld, {}> {
 }
 
 
-ReactDOM.render(<HelloWorld description="Das ist meine Tolle Hello World Beschreibung" name="Hallo Welt zu => SquadWuschel" alter={12} />, document.getElementById("hellowWorld"))

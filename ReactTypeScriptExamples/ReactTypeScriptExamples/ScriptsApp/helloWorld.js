@@ -16,5 +16,4 @@ var HelloWorld = (function (_super) {
     };
     return HelloWorld;
 }(React.Component));
-ReactDOM.render(React.createElement(HelloWorld, {description: "Das ist meine Tolle Hello World Beschreibung", name: "Hallo Welt zu => SquadWuschel", alter: 12}), document.getElementById("hellowWorld"));
 //# sourceMappingURL=helloWorld.js.map

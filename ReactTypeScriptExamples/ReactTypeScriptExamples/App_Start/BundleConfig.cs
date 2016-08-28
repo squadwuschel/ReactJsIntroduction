@@ -16,7 +16,9 @@ namespace ReactTypeScriptExamples
 
             //Bundle für unsere React Anwendung                
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                           "~/ScriptsApp/helloWorld.js"
+                           "~/ScriptsApp/counterComponent.js",
+                           "~/ScriptsApp/helloWorld.js",
+                           "~/ScriptsApp/mainApp.js"
             ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
