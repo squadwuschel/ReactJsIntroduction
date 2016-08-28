@@ -1,0 +1,8 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "devDependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}
