@@ -4,19 +4,35 @@
   "description": "Simple starter package for Redux with React",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jquery": "^2.2.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "4.3.0",
-    "redux": "^3.0.4"
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-redux": "5.0.6",
+    "redux": "3.2.1"
   },
   "devDependencies": {
     "@types/jquery": "2.0.48",
-    "jsdom": "^8.1.0"
+    "@types/react": "15.6.1",
+    "@types/react-dom": "15.6.1",
+    "jsdom": "^8.1.0",
+    "ts-loader": "2.2.1",
+    "html-loader": "0.4.4",
+    "extract-text-webpack-plugin": "2.0.0-rc.3",
+    "typescript": "2.1.1",
+    "typings": "2.1.1",
+    "autoprefixer": "6.7.2",
+    "html-webpack-plugin": "2.21.0",
+    "webpack-notifier": "1.5.0",
+    "webpack": "2.2.1",
+    "webpack-dev-middleware": "1.10.0",
+    "webpack-dev-server": "2.3.0",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-merge": "2.3.0"
   }
 }

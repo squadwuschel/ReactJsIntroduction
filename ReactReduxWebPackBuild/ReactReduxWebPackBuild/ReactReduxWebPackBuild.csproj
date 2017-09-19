@@ -19,6 +19,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -160,6 +161,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\index.html" />
     <Content Include="Config\helpers.js" />
     <Content Include="Config\webpack.common.js" />
     <Content Include="Config\webpack.dev.js" />
@@ -168,7 +170,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="postcss.config.js" />
     <Content Include="App\AppShared\Build\Generators\ProxyGeneratorScript.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
     </Content>
@@ -207,6 +208,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\index.tsx" />
     <TypeScriptCompile Include="App\Services\homejQueryTs.ts" />
     <TypeScriptCompile Include="App\AppShared\Build\Generators\Enums.ts">
       <DependentUpon>TypeLite.Net4.tt</DependentUpon>
