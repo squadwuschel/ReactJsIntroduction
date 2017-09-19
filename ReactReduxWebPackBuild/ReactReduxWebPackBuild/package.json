@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@types/jquery": "2.0.48",
-    "@types/react": "15.6.1",
-    "@types/react-dom": "15.6.1",
+    "@types/react": "0.14.57",
+    "@types/react-dom": "0.14.23",
     "jsdom": "^8.1.0",
     "ts-loader": "2.2.1",
     "html-loader": "0.4.4",

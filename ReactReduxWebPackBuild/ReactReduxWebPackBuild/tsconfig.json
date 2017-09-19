@@ -12,8 +12,7 @@
     "types": [
       "jquery",
       "react",
-      "react-dom",
-      "typePatches"
+      "react-dom"
       //  "node" //wird für RequireJs benötigt, damit z.b. der Typ gefunden werden kann
     ]
   },
