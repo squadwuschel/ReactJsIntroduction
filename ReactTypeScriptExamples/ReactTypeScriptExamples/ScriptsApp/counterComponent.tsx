@@ -33,6 +33,8 @@ class CounterComponent extends React.Component<ICounterProps, ICounterState> {
         };
     }
 
+    
+
     add(): void {
         this.setState({ counter: this.state.counter + 1 });
     }
