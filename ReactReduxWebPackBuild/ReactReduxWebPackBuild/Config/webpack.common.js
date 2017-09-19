@@ -3,8 +3,6 @@ var helpers = require('./helpers');
 var path = require('path');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
-var ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //Quellen:
@@ -33,7 +31,7 @@ module.exports = function (options) {
 
     return {
         entry: {
-            'app': './App/index.ts',
+            'app': './App/index.tsx',
         },
 
         resolve: {
@@ -44,7 +42,7 @@ module.exports = function (options) {
             *
             * See: http://webpack.github.io/docs/configuration.html#resolve-extensions
             */
-            extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+            extensions: [".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
         },
         module: {
             rules: [
