@@ -3,9 +3,6 @@
 //Created on 19.09.2017 time 19:26 from squad.
 
  
-
-  module App.JqueryServices { 
-
 export interface IhomejQueryTs { 
      getUser(age: number) : JQueryPromise<ReactReduxWebPackBuild.Models.IUser>;
  }
@@ -18,5 +15,4 @@ export class homejQueryTs implements IhomejQueryTs {
 
  
   }
-}
 
