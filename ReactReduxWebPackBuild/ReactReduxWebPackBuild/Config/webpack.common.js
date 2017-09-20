@@ -3,6 +3,7 @@ var helpers = require('./helpers');
 var path = require('path');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //Quellen:
@@ -31,7 +32,9 @@ module.exports = function (options) {
 
     return {
         entry: {
-            'app': './App/index.tsx',
+            'vendors': './App/AppShared/Build/vendors.tsx',
+            'appOne': './App/appOne.tsx',
+            'appTwo': './App/appTwo.tsx',
         },
 
         resolve: {
@@ -52,6 +55,18 @@ module.exports = function (options) {
         },
 
         plugins: [
+            /*
+                   * Plugin: CommonsChunkPlugin
+                   * Description: Shares common code between the pages.
+                   * It identifies common modules and put them into a commons chunk.
+                   *
+                   * See: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
+                   * See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
+                   */
+                new CommonsChunkPlugin({
+                    name: ['vendors'].reverse()
+                }),
+
                 /*
                 * Plugin: HtmlWebpackPlugin
                 * Description: Simplifies creation of HTML files to serve your webpack bundles.

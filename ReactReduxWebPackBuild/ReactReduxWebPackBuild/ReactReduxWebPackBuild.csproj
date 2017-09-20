@@ -208,8 +208,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="App\index.tsx" />
-    <TypeScriptCompile Include="App\Services\homejQueryTs.ts" />
+    <TypeScriptCompile Include="App\AppShared\Build\vendors.tsx" />
+    <TypeScriptCompile Include="App\appTwo.tsx" />
+    <TypeScriptCompile Include="App\appOne.tsx" />
+    <TypeScriptCompile Include="App\HttpServices\homejQueryTs.ts" />
     <TypeScriptCompile Include="App\AppShared\Build\Generators\Enums.ts">
       <DependentUpon>TypeLite.Net4.tt</DependentUpon>
     </TypeScriptCompile>
