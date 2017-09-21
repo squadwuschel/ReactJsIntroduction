@@ -208,7 +208,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="App\AppShared\Build\vendors.tsx" />
+    <TypeScriptCompile Include="App\AppShared\Build\vendors.ts" />
     <TypeScriptCompile Include="App\appTwo.tsx" />
     <TypeScriptCompile Include="App\appOne.tsx" />
     <TypeScriptCompile Include="App\HttpServices\homejQueryTs.ts" />
@@ -220,6 +220,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TypeLite.Net4.tt</DependentUpon>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="App\Views\searchBar.tsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\AppShared\Build\Generators\Manager.ttinclude" />

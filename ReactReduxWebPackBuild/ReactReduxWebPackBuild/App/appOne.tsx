@@ -1,6 +1,7 @@
 ﻿
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { SearchBar } from "./Views/searchBar";
 
 import * as ts from "./HttpServices/homejQueryTs"
 
@@ -8,6 +9,7 @@ import * as ts from "./HttpServices/homejQueryTs"
 const App = () => {
     return <div>
                HALLO WELT App One???
+               <SearchBar />
            </div>;
 }
 

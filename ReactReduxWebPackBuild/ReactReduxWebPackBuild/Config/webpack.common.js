@@ -32,7 +32,7 @@ module.exports = function (options) {
 
     return {
         entry: {
-            'vendors': './App/AppShared/Build/vendors.tsx',
+            'vendors': './App/AppShared/Build/vendors.ts',
             'appOne': './App/appOne.tsx',
             'appTwo': './App/appTwo.tsx',
         },
