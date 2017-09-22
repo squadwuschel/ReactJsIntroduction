@@ -30,18 +30,23 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var React = __webpack_require__(23);
-//functExport
-//export const SearchBar = () => {
-//    return <input value="" />;
-//}
 //ClassExport
 var SearchBar = (function (_super) {
     __extends(SearchBar, _super);
-    function SearchBar() {
-        return _super.call(this) || this;
+    function SearchBar(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = { term: props.term };
+        return _this;
     }
     SearchBar.prototype.render = function () {
-        return (React.createElement("input", { value: "" }));
+        return (React.createElement("div", null,
+            React.createElement("input", { onChange: this.onInputChange, value: "" }),
+            "Value of the Input: ",
+            this.state.term));
+    };
+    SearchBar.prototype.onInputChange = function (event) {
+        console.log(event.target.value);
+        this.setState({ term: event.target.value });
     };
     return SearchBar;
 }(React.Component));
