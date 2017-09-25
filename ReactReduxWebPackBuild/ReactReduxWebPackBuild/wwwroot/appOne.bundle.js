@@ -33,20 +33,18 @@ var React = __webpack_require__(23);
 //ClassExport
 var SearchBar = (function (_super) {
     __extends(SearchBar, _super);
+    //public state : ISearchProps;
     function SearchBar(props) {
         var _this = _super.call(this, props) || this;
-        _this.state = { term: props.term };
+        _this.state = { term: 'blubb' };
         return _this;
     }
     SearchBar.prototype.render = function () {
+        var _this = this;
         return (React.createElement("div", null,
-            React.createElement("input", { onChange: this.onInputChange, value: "" }),
+            React.createElement("input", { onChange: function (event) { return _this.setState({ term: event.target.value }); }, value: this.state.term }),
             "Value of the Input: ",
             this.state.term));
-    };
-    SearchBar.prototype.onInputChange = function (event) {
-        console.log(event.target.value);
-        this.setState({ term: event.target.value });
     };
     return SearchBar;
 }(React.Component));

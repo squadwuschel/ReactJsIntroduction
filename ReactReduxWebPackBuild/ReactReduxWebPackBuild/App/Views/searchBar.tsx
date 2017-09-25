@@ -11,30 +11,26 @@ export interface ISearchProps {
 
 
 //ClassExport
-export class SearchBar extends React.Component<ISearchProps, {}> {
-    public state : ISearchProps;
+export class SearchBar extends React.Component<any, any> {
+    //public state : ISearchProps;
 
-    constructor(props: ISearchProps) {
+    constructor(props : any) {
         super(props);
 
-        this.state =  { term: props.term };
+        this.state =  { term: 'blubb' };
 
     }
 
     public render() {
         return (
         <div>
-                <input onChange={this.onInputChange} value="" />
+                <input
+                    onChange={ (event : any) => this.setState({ term : event.target.value }) }
+                    value={this.state.term}
+                />
                 Value of the Input: {this.state.term}
             </div>
         );
     }
-
-    public onInputChange(event : any) {
-        console.log(event.target.value);
-        this.setState({ term : event.target.value });
-    }
-
-
 }
 
